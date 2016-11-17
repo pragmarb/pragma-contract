@@ -67,6 +67,25 @@ module API
         class Base < Pragma::Contract::Base
           property :title, type: Pragma::Contract::Types::Coercible::String
           property :body, type: Pragma::Contract::Types::Coercible::String
+          property :published_at, type: Pragma::Contract::Types::Form::Date
+        end
+      end
+    end
+  end
+end
+```
+
+Helpers are also provided as a shorthand syntax:
+
+```ruby
+module API
+  module V1
+    module Post
+      module Contract
+        class Base < Pragma::Contract::Base
+          property :title, type: coercible(:string)
+          property :body, type: coercible(:string)
+          property :published_at, type: form(:date)
         end
       end
     end
