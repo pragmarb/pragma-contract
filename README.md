@@ -49,8 +49,8 @@ end
 ```
 
 Since Pragma::Contract is built on top of [Reform](https://github.com/apotonick/reform), you should
-consult its documentation for the basic usage of contracts; the rest of this section only covers
-the features provided specifically by Pragma::Contract.
+consult [its documentation](http://trailblazer.to/gems/reform/) for the basic usage of contracts;
+the rest of this section only covers the features provided specifically by Pragma::Contract.
 
 ### Coercion
 
