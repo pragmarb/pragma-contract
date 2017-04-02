@@ -13,6 +13,8 @@ module Pragma
       feature Coercion
       feature Dry
 
+      property :current_user, virtual: true
+
       class << self
         protected
 
