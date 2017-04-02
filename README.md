@@ -93,33 +93,6 @@ module API
 end
 ```
 
-### Additional Predicates
-
-Pragma::Contract provides some helpful predicates in addition to
-[dry-validation's defaults](http://dry-rb.org/gems/dry-validation/basics/built-in-predicates/):
-
-```ruby
-module API
-  module V1
-    module Post
-      module Contract
-        class Base < Pragma::Contract::Base
-          validation do
-            # This step is required for loading the additional predicates.
-            configure do
-              predicates Pragma::Contract::Predicates
-            end
-
-            # :present? checks that a string is not made of whitespace only.
-            required(:title).value(:present?)
-          end
-        end
-      end
-    end
-  end
-end
-```
-
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/pragmarb/pragma-contract.

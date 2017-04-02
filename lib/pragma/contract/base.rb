@@ -10,8 +10,8 @@ module Pragma
     #
     # @author Alessandro Desantis
     class Base < Reform::Form
-      feature Coercion
-      feature Dry
+      feature Reform::Form::Coercion
+      feature Reform::Form::Dry
 
       property :current_user, virtual: true
 
@@ -45,7 +45,7 @@ module Pragma
         private
 
         def build_type(namespace, type)
-          Object.const_get "Pragma::Contract::Types::#{namespace}::#{type.to_s.capitalize}"
+          Object.const_get "Reform::Form::Coercion::Types::#{namespace}::#{type.to_s.capitalize}"
         end
       end
     end
