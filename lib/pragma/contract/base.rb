@@ -16,6 +16,10 @@ module Pragma
       property :current_user, virtual: true
 
       class << self
+        def property(name, options = {})
+          super
+        end
+
         protected
 
         def strict(type)
