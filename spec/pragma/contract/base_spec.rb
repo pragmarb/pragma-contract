@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 RSpec.describe Pragma::Contract::Base do
   subject { form_klass.new(model) }
 
