@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require 'reform/form/coercion'
 require 'reform/form/dry'
 
@@ -10,10 +11,16 @@ module Pragma
     #
     # @author Alessandro Desantis
     class Base < Reform::Form
-      feature Coercion
-      feature Dry
+      feature Reform::Form::Coercion
+      feature Reform::Form::Dry
+
+      property :current_user, virtual: true
 
       class << self
+        def property(name, options = {})
+          super
+        end
+
         protected
 
         def strict(type)
@@ -43,7 +50,7 @@ module Pragma
         private
 
         def build_type(namespace, type)
-          Object.const_get "Pragma::Contract::Types::#{namespace}::#{type.to_s.capitalize}"
+          Object.const_get "Reform::Form::Coercion::Types::#{namespace}::#{type.to_s.capitalize}"
         end
       end
     end
