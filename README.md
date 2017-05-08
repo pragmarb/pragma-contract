@@ -36,7 +36,7 @@ To create a contract, simply inherit from `Pragma::Contract::Base`:
 ```ruby
 module API
   module V1
-    module Post
+    module Article
       module Contract
         class Base < Pragma::Contract::Base
           property :title
@@ -62,7 +62,7 @@ You can access types with the `Pragma::Contract::Types` module.
 ```ruby
 module API
   module V1
-    module Post
+    module Article
       module Contract
         class Base < Pragma::Contract::Base
           property :title, type: Pragma::Contract::Types::Coercible::String
@@ -80,7 +80,7 @@ Helpers are also provided as a shorthand syntax:
 ```ruby
 module API
   module V1
-    module Post
+    module Article
       module Contract
         class Base < Pragma::Contract::Base
           property :title, type: coercible(:string)
