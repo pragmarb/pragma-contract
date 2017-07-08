@@ -5,6 +5,7 @@ require 'dry-types'
 require 'reform'
 
 require 'pragma/contract/version'
+require 'pragma/contract/coercion'
 require 'pragma/contract/base'
 require 'pragma/contract/types'
 

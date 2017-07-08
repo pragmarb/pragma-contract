@@ -13,46 +13,9 @@ module Pragma
     class Base < Reform::Form
       feature Reform::Form::Coercion
       feature Reform::Form::Dry
+      include Pragma::Contract::Coercion
 
       property :current_user, virtual: true
-
-      class << self
-        def property(name, options = {})
-          super
-        end
-
-        protected
-
-        def strict(type)
-          build_type 'Strict', type
-        end
-
-        def coercible(type)
-          build_type 'Coercible', type
-        end
-
-        def form(type)
-          build_type 'Form', type
-        end
-
-        def json(type)
-          build_type 'Json', type
-        end
-
-        def maybe_strict(type)
-          build_type 'Maybe::Strict', type
-        end
-
-        def maybe_coercible(type)
-          build_type 'Maybe::Coercible', type
-        end
-
-        private
-
-        def build_type(namespace, type)
-          Object.const_get "Pragma::Contract::Types::#{namespace}::#{type.to_s.capitalize}"
-        end
-      end
     end
   end
 end
