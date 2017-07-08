@@ -24,26 +24,26 @@ Style/BlockDelimiters:
   Exclude:
     - 'spec/**/*'
 
-Style/AlignParameters:
+Layout/AlignParameters:
   EnforcedStyle: with_fixed_indentation
 
-Style/ClosingParenthesisIndentation:
+Layout/ClosingParenthesisIndentation:
   Enabled: false
 
 Metrics/LineLength:
   Max: 100
   AllowURI: true
 
-Style/FirstParameterIndentation:
+Layout/FirstParameterIndentation:
   Enabled: false
 
-Style/MultilineMethodCallIndentation:
+Layout/MultilineMethodCallIndentation:
   EnforcedStyle: indented
 
-Style/IndentArray:
+Layout/IndentArray:
   EnforcedStyle: consistent
 
-Style/IndentHash:
+Layout/IndentHash:
   EnforcedStyle: consistent
 
 Style/SignalException:
@@ -67,3 +67,13 @@ RSpec/NamedSubject:
 
 RSpec/ExampleLength:
   Enabled: false
+
+Metrics/BlockLength:
+  Enabled: False
+
+Style/Documentation:
+  Enabled: false
+
+Style/FileName:
+  Exclude:
+    - '*.gemspec'

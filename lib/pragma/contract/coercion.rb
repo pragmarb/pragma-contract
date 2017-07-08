@@ -12,7 +12,7 @@ module Pragma
           if block_given?
             super(*args) do
               include Pragma::Contract::Coercion
-              instance_eval &block
+              instance_eval(&block)
             end
           else
             super(*args)
