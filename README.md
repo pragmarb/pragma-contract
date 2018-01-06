@@ -1,9 +1,9 @@
 # Pragma::Contract
 
-[![Build Status](https://img.shields.io/travis/pragmarb/pragma-contract.svg?maxAge=3600&style=flat-square)](https://travis-ci.org/pragmarb/pragma-contract)
-[![Dependency Status](https://img.shields.io/gemnasium/pragmarb/pragma-contract.svg?maxAge=3600&style=flat-square)](https://gemnasium.com/github.com/pragmarb/pragma-contract)
-[![Code Climate](https://img.shields.io/codeclimate/github/pragmarb/pragma-contract.svg?maxAge=3600&style=flat-square)](https://codeclimate.com/github/pragmarb/pragma-contract)
-[![Coveralls](https://img.shields.io/coveralls/pragmarb/pragma-contract.svg?maxAge=3600&style=flat-square)](https://coveralls.io/github/pragmarb/pragma-contract)
+[![Build Status](https://travis-ci.org/pragmarb/pragma-contract.svg?branch=master)](https://travis-ci.org/pragmarb/pragma-contract)
+[![Dependency Status](https://gemnasium.com/badges/github.com/pragmarb/pragma-contract.svg)](https://gemnasium.com/github.com/pragmarb/pragma-contract)
+[![Coverage Status](https://coveralls.io/repos/github/pragmarb/pragma-contract/badge.svg?branch=master)](https://coveralls.io/github/pragmarb/pragma-contract?branch=master)
+[![Maintainability](https://api.codeclimate.com/v1/badges/e51e8d7489eb72ab97ba/maintainability)](https://codeclimate.com/github/pragmarb/pragma-contract/maintainability)
 
 Contracts are form objects on steroids for your JSON API.
 
