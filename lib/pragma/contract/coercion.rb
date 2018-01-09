@@ -8,19 +8,6 @@ module Pragma
       end
 
       module ClassMethods
-        def property(*args, &block)
-          if block_given?
-            super(*args) do
-              include Pragma::Contract::Coercion
-              instance_eval(&block)
-            end
-          else
-            super(*args)
-          end
-        end
-
-        private
-
         def strict(type)
           build_type 'Strict', type
         end

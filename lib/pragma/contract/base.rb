@@ -12,8 +12,8 @@ module Pragma
     # @author Alessandro Desantis
     class Base < Reform::Form
       feature Reform::Form::Coercion
+      feature Pragma::Contract::Coercion
       feature Reform::Form::Dry
-      include Pragma::Contract::Coercion
 
       property :current_user, virtual: true
     end
