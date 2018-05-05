@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Fixed
+
+- Fixed Dry::Types 0.13 breaking coercion
+
 ### Changed
 
 - `Pragma::Contract::Coercion` is now loaded with `feature`

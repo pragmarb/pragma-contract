@@ -17,7 +17,13 @@ module Pragma
         end
 
         def form(type)
-          build_type 'Form', type
+          # Dry::Types 0.13 renames Types::Form to Types::Params and the Int type to Integer.
+
+          if Dry::Types['form.int']
+            build_type 'Form', type
+          else
+            build_type 'Params', type.to_sym == :int ? :integer : type
+          end
         end
 
         def json(type)
