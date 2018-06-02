@@ -23,7 +23,7 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency 'reform', '~> 2.2'
   spec.add_dependency 'dry-types', '~> 0.9'
-  spec.add_dependency 'dry-validation', '~> 0.10'
+  spec.add_dependency 'dry-validation', '~> 0.11.1'
 
   spec.add_development_dependency 'bundler'
   spec.add_development_dependency 'rake'

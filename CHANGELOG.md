@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Fixed
 
 - Fixed Dry::Types 0.13 breaking coercion
+- Locked Dry::Validation to 0.11.x to prevent error with Dry::Validation.Form not being available
 
 ### Changed
 
