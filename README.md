@@ -1,7 +1,6 @@
 # Pragma::Contract
 
 [![Build Status](https://travis-ci.org/pragmarb/pragma-contract.svg?branch=master)](https://travis-ci.org/pragmarb/pragma-contract)
-[![Dependency Status](https://gemnasium.com/badges/github.com/pragmarb/pragma-contract.svg)](https://gemnasium.com/github.com/pragmarb/pragma-contract)
 [![Coverage Status](https://coveralls.io/repos/github/pragmarb/pragma-contract/badge.svg?branch=master)](https://coveralls.io/github/pragmarb/pragma-contract?branch=master)
 [![Maintainability](https://api.codeclimate.com/v1/badges/e51e8d7489eb72ab97ba/maintainability)](https://codeclimate.com/github/pragmarb/pragma-contract/maintainability)
 
