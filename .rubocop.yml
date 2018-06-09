@@ -52,7 +52,7 @@ Style/SignalException:
 Style/BracesAroundHashParameters:
   EnforcedStyle: context_dependent
 
-Lint/EndAlignment:
+Layout/EndAlignment:
   EnforcedStyleAlignWith: variable
   AutoCorrect: true
 
@@ -74,6 +74,6 @@ Metrics/BlockLength:
 Style/Documentation:
   Enabled: false
 
-Style/FileName:
+Naming/FileName:
   Exclude:
     - '*.gemspec'
