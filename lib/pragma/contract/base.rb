@@ -14,6 +14,7 @@ module Pragma
       feature Reform::Form::Coercion
       feature Pragma::Contract::Coercion
       feature Reform::Form::Dry
+      feature Pragma::Contract::ModelFinder
 
       property :current_user, virtual: true
     end
