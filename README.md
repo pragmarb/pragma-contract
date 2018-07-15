@@ -92,7 +92,7 @@ module API
 end
 ```
 
-## Model finders
+### Model finders
 
 This is a common pattern in API contracts:
 
