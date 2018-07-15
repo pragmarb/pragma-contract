@@ -92,6 +92,60 @@ module API
 end
 ```
 
+## Model finders
+
+This is a common pattern in API contracts:
+
+```ruby
+module API
+  module V1
+    module Invoice
+      module Contract
+        class Base < Pragma::Contract::Base
+          property :customer
+
+          def customer=(val)
+            super ::Customer.find_by(id: val)
+          end
+        end
+      end
+    end
+  end
+end
+```
+
+Pragma::Contract provides a shorthand syntax:
+
+```ruby
+module API
+  module V1
+    module Invoice
+      module Contract
+        class Base < Pragma::Contract::Base
+          property :customer, type: Customer
+        end
+      end
+    end
+  end
+end
+```
+
+You can also specify a custom column to find by!
+
+```ruby
+module API
+  module V1
+    module Invoice
+      module Contract
+        class Base < Pragma::Contract::Base
+          property :customer, type: Customer, by: :email
+        end
+      end
+    end
+  end
+end
+```
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/pragmarb/pragma-contract.
