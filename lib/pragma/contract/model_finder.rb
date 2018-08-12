@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Pragma
   module Contract
     module ModelFinder
@@ -14,7 +16,7 @@ module Pragma
         def property(name, options)
           return super if !options[:type] || options[:type].is_a?(Dry::Types::Type)
 
-          property(name, Hash[options.select { |k, _| k != :type }])
+          property(name, Hash[options.reject { |k, _| k == :type }])
 
           define_method("#{name}=") do |value|
             finder = Pragma::Contract::ModelFinder.load_adaptor!(

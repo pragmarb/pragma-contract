@@ -5,6 +5,7 @@ AllCops:
   Include:
     - '**/Gemfile'
     - '**/Rakefile'
+    - '**/*.rb'
   Exclude:
    - 'bin/*'
    - 'db/**/*'
@@ -77,3 +78,6 @@ Style/Documentation:
 Naming/FileName:
   Exclude:
     - '*.gemspec'
+
+Metrics/AbcSize:
+  Enabled: false
