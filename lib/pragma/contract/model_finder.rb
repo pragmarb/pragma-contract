@@ -13,7 +13,7 @@ module Pragma
       end
 
       module ClassMethods
-        def property(name, options)
+        def property(name, options = {})
           return super if !options[:type] || options[:type].is_a?(Dry::Types::Type)
 
           property(name, Hash[options.reject { |k, _| k == :type }])
