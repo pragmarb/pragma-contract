@@ -25,6 +25,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'dry-types', '~> 0.12.0'
   spec.add_dependency 'dry-validation', '~> 0.11.1'
   spec.add_dependency 'reform', '~> 2.2'
+  spec.add_dependency 'zeitwerk', '~> 2.1'
 
   spec.add_development_dependency 'bundler'
   spec.add_development_dependency 'coveralls'

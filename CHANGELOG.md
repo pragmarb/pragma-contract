@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+- Switched to Zeitwerk for autoloading
+
 ## [2.1.1]
 
 ### Fixed
